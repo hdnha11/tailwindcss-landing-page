@@ -1,0 +1,21 @@
+{
+  "name": "tailwindcss-landing-page",
+  "version": "1.0.0",
+  "description": "A restaurant landing page with TailwindCSS",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Nha Hoang <hdnha11@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.0",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
+  }
+}

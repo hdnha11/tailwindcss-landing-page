@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-orange-lighter text-lg md:text-xl font-body">
+    <header
+      class="
+        flex
+        items-center
+        pt-10
+        lg:pt-14
+        xl:pt-20
+        px-6
+        md:px-8
+        max-w-7xl
+        mx-auto
+      "
+    >
+      <img class="w-24 md:w-44" src="./images/logo.png" alt="Logo" />
+
+      <nav class="hidden lg:flex-1 lg:flex justify-center">
+        <ul class="lg:space-x-8 xl:space-x-16">
+          <li class="inline-block text-red transition hover:text-opacity-70">
+            <a href="/">Home</a>
+          </li>
+          <li class="inline-block text-black transition hover:text-opacity-70">
+            <a href="#">Menu</a>
+          </li>
+          <li class="inline-block text-black transition hover:text-opacity-70">
+            <a href="#">About Us</a>
+          </li>
+          <li class="inline-block text-black transition hover:text-opacity-70">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div
+        class="
+          flex-1
+          lg:flex-none
+          flex
+          items-center
+          justify-end
+          lg:ml-40
+          space-x-3
+          md:space-x-6
+        "
+      >
+        <a class="text-lg md:text-3xl" href="#"
+          ><i class="far fa-bookmark"></i
+        ></a>
+        <a
+          class="
+            inline-block
+            px-6
+            md:px-8
+            py-2
+            md:py-3
+            rounded-full
+            bg-cyan-dark
+            text-white
+            transition
+            hover:bg-cyan-700
+            focus:outline-none
+            focus:ring
+            focus:ring-offset-2
+            focus:ring-cyan-dark
+            focus:ring-opacity-50
+          "
+          href="#"
+          >Sign Up</a
+        >
+      </div>
+
+      <i class="ml-4 lg:hidden">
+        <img src="./images/hamburger.svg" alt="Hamberger menu" />
+      </i>
+    </header>
+
+    <main class="mb-20 px-6 md:px-8 max-w-7xl mx-auto">
+      <section class="grid lg:grid-flow-col-12 xl:grid-cols-2">
+        <div class="lg:col-span-7 xl:col-span-1">
+          <h1
+            class="font-heading text-4xl md:text-6xl my-10 xl:text-7xl xl:my-16"
+          >
+            It's not just Food,
+            <br />
+            it's an Experience.
+          </h1>
+
+          <div class="space-x-2 md:space-x-4 xl:space-x-6">
+            <a
+              class="
+                inline-block
+                px-4
+                md:px-6
+                py-1.5
+                md:py-2
+                rounded-full
+                bg-cyan-dark
+                text-white
+                transition
+                hover:bg-cyan-700
+                focus:outline-none
+                focus:ring
+                focus:ring-offset-2
+                focus:ring-cyan-dark
+                focus:ring-opacity-50
+              "
+              href="#"
+              >View Menu</a
+            >
+            <a
+              class="
+                inline-block
+                px-4
+                md:px-6
+                py-1.5
+                md:py-2
+                rounded-full
+                bg-white
+                text-black
+                border border-gray-900
+                transition
+                hover:bg-gray-100
+                focus:outline-none
+                focus:ring
+                focus:ring-offset-2
+                focus:ring-white
+                focus:ring-opacity-50
+              "
+              href="#"
+              >Book a table</a
+            >
+          </div>
+
+          <h4 class="text-2xl font-bold mt-9 mb-2">Reviews</h4>
+          <ul class="flex">
+            <li
+              class="
+                w-8
+                h-8
+                rounded-full
+                overflow-hidden
+                bg-black
+                cursor-pointer
+                transition
+                transform
+                hover:-translate-y-1 hover:z-10
+              "
+            >
+              <img src="images/user1.jpeg" alt="User 1" />
+            </li>
+            <li
+              class="
+                w-8
+                h-8
+                rounded-full
+                overflow-hidden
+                bg-black
+                cursor-pointer
+                transition
+                transform
+                hover:-translate-y-1 hover:z-10
+                relative
+                -left-2
+              "
+            >
+              <img src="images/user2.jpeg" alt="User 2" />
+            </li>
+            <li
+              class="
+                w-8
+                h-8
+                rounded-full
+                overflow-hidden
+                bg-black
+                cursor-pointer
+                transition
+                transform
+                hover:-translate-y-1 hover:z-10
+                relative
+                -left-4
+              "
+            >
+              <img src="images/user3.jpeg" alt="User 3" />
+            </li>
+            <li
+              class="
+                w-8
+                h-8
+                rounded-full
+                overflow-hidden
+                bg-black
+                cursor-pointer
+                transition
+                transform
+                hover:-translate-y-1 hover:z-10
+                relative
+                -left-6
+                text-center
+              "
+            >
+              <span class="text-white text-xs">46+</span>
+            </li>
+          </ul>
+          <ul class="flex space-x-0.5 mt-2">
+            <li class="text-yellow-dark cursor-pointer hover:text-yellow-500">
+              <i class="fas fa-star"></i>
+            </li>
+            <li class="text-yellow-dark cursor-pointer hover:text-yellow-500">
+              <i class="fas fa-star"></i>
+            </li>
+            <li class="text-yellow-dark cursor-pointer hover:text-yellow-500">
+              <i class="fas fa-star"></i>
+            </li>
+            <li class="text-yellow-dark cursor-pointer hover:text-yellow-500">
+              <i class="fas fa-star"></i>
+            </li>
+            <li class="text-yellow-dark cursor-pointer hover:text-yellow-500">
+              <i class="far fa-star"></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lg:col-start-8 lg:col-span-5 xl:col-start-2 xl:col-span-1">
+          <img
+            src="images/hot-plate-black-pepper-beef.png"
+            alt="Hot plate black pepper beef"
+          />
+        </div>
+      </section>
+
+      <section
+        class="
+          mt-32
+          md:px-16
+          grid
+          md:grid-cols-2
+          lg:grid-cols-3
+          xl:grid-cols-4
+          gap-8
+          relative
+        "
+      >
+        <div
+          class="
+            hidden
+            md:block
+            absolute
+            -left-4
+            top-1/2
+            transform
+            -translate-y-1/2
+            text-3xl text-center
+            w-12
+            h-12
+            border-4 border-black
+            rounded-full
+            transition
+            cursor-pointer
+            hover:opacity-60
+          "
+        >
+          <i class="fas fa-arrow-left inline-block align-middle"></i>
+        </div>
+
+        <div
+          class="
+            hidden
+            md:block
+            absolute
+            -right-4
+            top-1/2
+            transform
+            -translate-y-1/2
+            text-3xl text-center
+            w-12
+            h-12
+            border-4 border-black
+            rounded-full
+            transition
+            cursor-pointer
+            hover:opacity-60
+          "
+        >
+          <i class="fas fa-arrow-right inline-block align-middle"></i>
+        </div>
+
+        <div
+          class="
+            mb-20
+            xl:mb-0
+            pt-32
+            pb-5
+            px-4
+            rounded-large
+            bg-red-light
+            relative
+            col-span-1
+            flex flex-col
+            items-start
+            shadow-3xl
+            cursor-pointer
+            transition
+            transform
+            hover:-translate-y-2
+          "
+        >
+          <img
+            class="
+              w-48
+              -top-4
+              left-1/2
+              -translate-y-1/3 -translate-x-1/2
+              absolute
+            "
+            src="images/ramen.png"
+            alt="Ramen"
+          />
+          <h3 class="text-xl font-bold mb-12 flex-1 whitespace-nowrap">
+            Ramen with Vegetable
+          </h3>
+          <span
+            class="
+              inline-block
+              font-bold
+              text-white
+              tracking-wide
+              bg-black
+              px-1.5
+              py-1
+              rounded-full
+            "
+            >$35.00</span
+          >
+        </div>
+
+        <div
+          class="
+            mb-20
+            xl:mb-0
+            pt-32
+            pb-5
+            px-4
+            rounded-large
+            bg-orange-light
+            relative
+            col-span-1
+            flex flex-col
+            items-start
+            shadow-3xl
+            cursor-pointer
+            transition
+            transform
+            hover:-translate-y-2
+          "
+        >
+          <img
+            class="
+              w-48
+              -top-4
+              left-1/2
+              -translate-y-1/3 -translate-x-1/2
+              absolute
+            "
+            src="images/spicy-noodles.png"
+            alt="Spicy noodles"
+          />
+          <h3 class="text-xl font-bold mb-12 flex-1 whitespace-nowrap">
+            Spicy Sausage Noodles
+          </h3>
+          <span
+            class="
+              inline-block
+              font-bold
+              text-white
+              tracking-wide
+              bg-black
+              px-1.5
+              py-1
+              rounded-full
+            "
+            >$25.00</span
+          >
+        </div>
+
+        <div
+          class="
+            mb-20
+            xl:mb-0
+            pt-32
+            pb-5
+            px-4
+            rounded-large
+            bg-teal-light
+            relative
+            col-span-1
+            flex flex-col
+            items-start
+            shadow-3xl
+            cursor-pointer
+            transition
+            transform
+            hover:-translate-y-2
+          "
+        >
+          <img
+            class="
+              w-48
+              -top-4
+              left-1/2
+              -translate-y-1/3 -translate-x-1/2
+              absolute
+            "
+            src="images/natto.png"
+            alt="Natto"
+          />
+          <h3 class="text-xl font-bold mb-12 flex-1 whitespace-nowrap">
+            Unique Natto
+          </h3>
+          <span
+            class="
+              inline-block
+              font-bold
+              text-white
+              tracking-wide
+              bg-black
+              px-1.5
+              py-1
+              rounded-full
+            "
+            >$10.00</span
+          >
+        </div>
+
+        <div
+          class="
+            mb-20
+            xl:mb-0
+            pt-32
+            pb-5
+            px-4
+            rounded-large
+            bg-green-light
+            relative
+            col-span-1
+            flex flex-col
+            items-start
+            shadow-3xl
+            cursor-pointer
+            transition
+            transform
+            hover:-translate-y-2
+          "
+        >
+          <img
+            class="
+              w-48
+              -top-4
+              left-1/2
+              -translate-y-1/3 -translate-x-1/2
+              absolute
+            "
+            src="images/udon.png"
+            alt="Udon"
+          />
+          <h3 class="text-xl font-bold mb-12 flex-1 whitespace-nowrap">
+            Special Udon
+          </h3>
+          <span
+            class="
+              inline-block
+              font-bold
+              text-white
+              tracking-wide
+              bg-black
+              px-1.5
+              py-1
+              rounded-full
+            "
+            >$25.00</span
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
